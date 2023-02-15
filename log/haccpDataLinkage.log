@@ -1,0 +1,254 @@
+2023-02-15 12:23:54.333  INFO 11841 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Starting HaccpDataLinkageApplication using Java 11.0.18 on yoodanggeun.local with PID 11841 (/Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage/build/classes/java/main started by yuseung-geun in /Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage)
+2023-02-15 12:23:54.335  INFO 11841 --- [main] c.e.haccp.HaccpDataLinkageApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-02-15 12:23:54.658  INFO 11841 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-02-15 12:23:54.664  INFO 11841 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-02-15 12:23:54.891  INFO 11841 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-15 12:23:54.896  INFO 11841 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-15 12:23:54.897  INFO 11841 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-15 12:23:54.971  INFO 11841 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-15 12:23:54.972  INFO 11841 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 617 ms
+2023-02-15 12:23:55.275  INFO 11841 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 12:23:55.275  INFO 11841 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2023-02-15 12:23:55.275  INFO 11841 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-02-15 12:23:55.275  INFO 11841 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 12:23:55.275  INFO 11841 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-02-15 12:23:55.275  INFO 11841 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 12:23:55.696  INFO 11841 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 12:23:55.716  INFO 11841 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-15 12:23:55.725  INFO 11841 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Started HaccpDataLinkageApplication in 1.629 seconds (JVM running for 1.818)
+2023-02-15 12:26:20.421  INFO 11841 --- [SpringApplicationShutdownHook] .m.i.MqttPahoMessageDrivenChannelAdapter : stopped bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 12:26:20.423  INFO 11841 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 12:26:20.424  INFO 11841 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2023-02-15 12:26:20.424  INFO 11841 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-02-15 12:26:20.424  INFO 11841 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 12:26:20.425  INFO 11841 --- [SpringApplicationShutdownHook] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 0 subscriber(s).
+2023-02-15 12:26:20.425  INFO 11841 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:11:20.084  INFO 15180 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Starting HaccpDataLinkageApplication using Java 11.0.18 on yoodanggeun.local with PID 15180 (/Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage/build/classes/java/main started by yuseung-geun in /Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage)
+2023-02-15 15:11:20.086  INFO 15180 --- [main] c.e.haccp.HaccpDataLinkageApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-02-15 15:11:20.442  INFO 15180 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-02-15 15:11:20.450  INFO 15180 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-02-15 15:11:20.690  INFO 15180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-15 15:11:20.700  INFO 15180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-15 15:11:20.700  INFO 15180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-15 15:11:20.743  INFO 15180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-15 15:11:20.743  INFO 15180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 633 ms
+2023-02-15 15:11:21.070  INFO 15180 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:11:21.071  INFO 15180 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2023-02-15 15:11:21.071  INFO 15180 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:11:21.071  INFO 15180 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:11:21.071  INFO 15180 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-02-15 15:11:21.071  INFO 15180 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:11:21.647  INFO 15180 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:11:21.663  INFO 15180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-15 15:11:21.671  INFO 15180 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Started HaccpDataLinkageApplication in 1.875 seconds (JVM running for 2.236)
+2023-02-15 15:11:40.535  INFO 15180 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-15 15:11:40.648 ERROR 15180 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
+	at com.edgecross.haccp.HaccpDataLinkageApplication.main(HaccpDataLinkageApplication.java:26) ~[main/:na]
+Caused by: java.lang.ClassCastException: class com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa440 cannot be cast to class com.edgecross.haccp.dto.mqtt.MqttDto (com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa440 and com.edgecross.haccp.dto.mqtt.MqttDto are in unnamed module of loader 'app')
+	at com.edgecross.haccp.HaccpDataLinkageApplication.run(HaccpDataLinkageApplication.java:32) ~[main/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.8.jar:2.7.8]
+	... 5 common frames omitted
+
+2023-02-15 15:11:45.744  INFO 15180 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : stopped bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:11:45.746  INFO 15180 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:11:45.747  INFO 15180 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2023-02-15 15:11:45.748  INFO 15180 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:11:45.750  INFO 15180 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:11:45.751  INFO 15180 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 0 subscriber(s).
+2023-02-15 15:11:45.752  INFO 15180 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:11:53.858  INFO 15183 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Starting HaccpDataLinkageApplication using Java 11.0.18 on yoodanggeun.local with PID 15183 (/Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage/build/classes/java/main started by yuseung-geun in /Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage)
+2023-02-15 15:11:53.860  INFO 15183 --- [main] c.e.haccp.HaccpDataLinkageApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-02-15 15:11:54.212  INFO 15183 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-02-15 15:11:54.219  INFO 15183 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-02-15 15:11:54.470  INFO 15183 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-15 15:11:54.478  INFO 15183 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-15 15:11:54.478  INFO 15183 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-15 15:11:54.528  INFO 15183 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-15 15:11:54.528  INFO 15183 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 644 ms
+2023-02-15 15:11:54.869  INFO 15183 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:11:54.870  INFO 15183 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2023-02-15 15:11:54.870  INFO 15183 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:11:54.870  INFO 15183 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:11:54.870  INFO 15183 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-02-15 15:11:54.870  INFO 15183 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:11:55.271  INFO 15183 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:11:55.287  INFO 15183 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-15 15:11:55.295  INFO 15183 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Started HaccpDataLinkageApplication in 1.698 seconds (JVM running for 1.905)
+2023-02-15 15:12:18.952  INFO 15183 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-15 15:12:19.061 ERROR 15183 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
+	at com.edgecross.haccp.HaccpDataLinkageApplication.main(HaccpDataLinkageApplication.java:26) ~[main/:na]
+Caused by: java.lang.ClassCastException: class com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa040 cannot be cast to class com.edgecross.haccp.dto.mqtt.MqttDto (com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa040 and com.edgecross.haccp.dto.mqtt.MqttDto are in unnamed module of loader 'app')
+	at com.edgecross.haccp.HaccpDataLinkageApplication.run(HaccpDataLinkageApplication.java:32) ~[main/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.8.jar:2.7.8]
+	... 5 common frames omitted
+
+2023-02-15 15:12:24.158  INFO 15183 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : stopped bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:12:24.161  INFO 15183 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:12:24.162  INFO 15183 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2023-02-15 15:12:24.163  INFO 15183 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:12:24.165  INFO 15183 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:12:24.166  INFO 15183 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 0 subscriber(s).
+2023-02-15 15:12:24.167  INFO 15183 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:12:26.939  INFO 15184 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Starting HaccpDataLinkageApplication using Java 11.0.18 on yoodanggeun.local with PID 15184 (/Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage/build/classes/java/main started by yuseung-geun in /Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage)
+2023-02-15 15:12:26.941  INFO 15184 --- [main] c.e.haccp.HaccpDataLinkageApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-02-15 15:12:27.276  INFO 15184 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-02-15 15:12:27.284  INFO 15184 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-02-15 15:12:27.522  INFO 15184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-15 15:12:27.528  INFO 15184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-15 15:12:27.528  INFO 15184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-15 15:12:27.571  INFO 15184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-15 15:12:27.571  INFO 15184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 609 ms
+2023-02-15 15:12:27.898  INFO 15184 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:12:27.898  INFO 15184 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2023-02-15 15:12:27.899  INFO 15184 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:12:27.899  INFO 15184 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:12:27.899  INFO 15184 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-02-15 15:12:27.899  INFO 15184 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:12:28.271  INFO 15184 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:12:28.287  INFO 15184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-15 15:12:28.294  INFO 15184 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Started HaccpDataLinkageApplication in 1.61 seconds (JVM running for 1.811)
+2023-02-15 15:28:34.174 ERROR 15184 --- [MQTT Ping: paho55190770843750] o.e.p.c.mqttv3.internal.ClientState      : paho55190770843750: Timed out as no write activity, keepAlive=60,000,000,000 lastOutboundActivity=55,191,705,675,500 lastInboundActivity=55,191,715,361,541 time=56,051,712,164,541 lastPing=0
+2023-02-15 15:29:35.450  INFO 15273 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Starting HaccpDataLinkageApplication using Java 11.0.18 on yoodanggeun.local with PID 15273 (/Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage/build/classes/java/main started by yuseung-geun in /Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage)
+2023-02-15 15:29:35.451  INFO 15273 --- [main] c.e.haccp.HaccpDataLinkageApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-02-15 15:29:35.771  INFO 15273 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-02-15 15:29:35.778  INFO 15273 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-02-15 15:29:36.000  INFO 15273 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-15 15:29:36.006  INFO 15273 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-15 15:29:36.007  INFO 15273 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-15 15:29:36.046  INFO 15273 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-15 15:29:36.046  INFO 15273 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 574 ms
+2023-02-15 15:29:36.345  INFO 15273 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:29:36.345  INFO 15273 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2023-02-15 15:29:36.346  INFO 15273 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:29:36.346  INFO 15273 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:29:36.346  INFO 15273 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-02-15 15:29:36.346  INFO 15273 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:29:36.774  INFO 15273 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:29:36.783  INFO 15273 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-15 15:29:36.789  INFO 15273 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Started HaccpDataLinkageApplication in 1.584 seconds (JVM running for 1.778)
+2023-02-15 15:29:36.791  INFO 15273 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-15 15:29:36.801 ERROR 15273 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
+	at com.edgecross.haccp.HaccpDataLinkageApplication.main(HaccpDataLinkageApplication.java:26) ~[main/:na]
+Caused by: java.lang.ClassCastException: class com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa440 cannot be cast to class com.edgecross.haccp.dto.mqtt.MqttDto (com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa440 and com.edgecross.haccp.dto.mqtt.MqttDto are in unnamed module of loader 'app')
+	at com.edgecross.haccp.HaccpDataLinkageApplication.run(HaccpDataLinkageApplication.java:32) ~[main/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.8.jar:2.7.8]
+	... 5 common frames omitted
+
+2023-02-15 15:29:41.827  INFO 15273 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : stopped bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:29:41.828  INFO 15273 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:29:41.828  INFO 15273 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2023-02-15 15:29:41.828  INFO 15273 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:29:41.828  INFO 15273 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:29:41.828  INFO 15273 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 0 subscriber(s).
+2023-02-15 15:29:41.828  INFO 15273 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:50:06.456  INFO 15350 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Starting HaccpDataLinkageApplication using Java 11.0.18 on yoodanggeun.local with PID 15350 (/Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage/build/classes/java/main started by yuseung-geun in /Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage)
+2023-02-15 15:50:06.459  INFO 15350 --- [main] c.e.haccp.HaccpDataLinkageApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-02-15 15:50:06.986  INFO 15350 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-02-15 15:50:07.000  INFO 15350 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-02-15 15:50:07.464  INFO 15350 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-15 15:50:07.475  INFO 15350 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-15 15:50:07.476  INFO 15350 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-15 15:50:07.549  INFO 15350 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-15 15:50:07.549  INFO 15350 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1054 ms
+2023-02-15 15:50:08.134  INFO 15350 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:50:08.135  INFO 15350 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2023-02-15 15:50:08.135  INFO 15350 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:50:08.135  INFO 15350 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:50:08.135  INFO 15350 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-02-15 15:50:08.135  INFO 15350 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 15:50:08.625  INFO 15350 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:50:08.649  INFO 15350 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-15 15:50:08.659  INFO 15350 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Started HaccpDataLinkageApplication in 2.736 seconds (JVM running for 3.17)
+2023-02-15 15:50:35.674  INFO 15350 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-15 15:50:35.808 ERROR 15350 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
+	at com.edgecross.haccp.HaccpDataLinkageApplication.main(HaccpDataLinkageApplication.java:26) ~[main/:na]
+Caused by: java.lang.ClassCastException: class com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa440 cannot be cast to class com.edgecross.haccp.dto.mqtt.MqttDto (com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa440 and com.edgecross.haccp.dto.mqtt.MqttDto are in unnamed module of loader 'app')
+	at com.edgecross.haccp.HaccpDataLinkageApplication.run(HaccpDataLinkageApplication.java:32) ~[main/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.8.jar:2.7.8]
+	... 5 common frames omitted
+
+2023-02-15 15:50:40.922  INFO 15350 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : stopped bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 15:50:40.925  INFO 15350 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 15:50:40.926  INFO 15350 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2023-02-15 15:50:40.927  INFO 15350 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-02-15 15:50:40.928  INFO 15350 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 15:50:40.930  INFO 15350 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 0 subscriber(s).
+2023-02-15 15:50:40.931  INFO 15350 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 16:19:15.210  INFO 15486 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Starting HaccpDataLinkageApplication using Java 11.0.18 on yoodanggeun.local with PID 15486 (/Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage/build/classes/java/main started by yuseung-geun in /Users/yuseung-geun/Desktop/Edgecross/workspace/haccpDataLinkage)
+2023-02-15 16:19:15.212  INFO 15486 --- [main] c.e.haccp.HaccpDataLinkageApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-02-15 16:19:15.558  INFO 15486 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-02-15 16:19:15.565  INFO 15486 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-02-15 16:19:15.801  INFO 15486 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-15 16:19:15.807  INFO 15486 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-15 16:19:15.807  INFO 15486 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-15 16:19:15.846  INFO 15486 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-15 16:19:15.847  INFO 15486 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 615 ms
+2023-02-15 16:19:16.162  INFO 15486 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 16:19:16.162  INFO 15486 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2023-02-15 16:19:16.162  INFO 15486 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-02-15 16:19:16.162  INFO 15486 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 16:19:16.162  INFO 15486 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-02-15 16:19:16.162  INFO 15486 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'mqttConfig.inboundMessageHandler.serviceActivator'
+2023-02-15 16:19:16.661  INFO 15486 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : started bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 16:19:16.679  INFO 15486 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-15 16:19:16.687  INFO 15486 --- [main] c.e.haccp.HaccpDataLinkageApplication    : Started HaccpDataLinkageApplication in 1.724 seconds (JVM running for 1.926)
+2023-02-15 16:19:16.689  INFO 15486 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-15 16:19:16.701 ERROR 15486 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
+	at com.edgecross.haccp.HaccpDataLinkageApplication.main(HaccpDataLinkageApplication.java:26) ~[main/:na]
+Caused by: java.lang.ClassCastException: class com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa440 cannot be cast to class com.edgecross.haccp.dto.mqtt.MqttDto (com.edgecross.haccp.config.MqttConfig$$Lambda$624/0x00000008004fa440 and com.edgecross.haccp.dto.mqtt.MqttDto are in unnamed module of loader 'app')
+	at com.edgecross.haccp.HaccpDataLinkageApplication.run(HaccpDataLinkageApplication.java:32) ~[main/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.8.jar:2.7.8]
+	... 5 common frames omitted
+
+2023-02-15 16:19:21.725  INFO 15486 --- [main] .m.i.MqttPahoMessageDrivenChannelAdapter : stopped bean 'inboundChannel'; defined in: 'class path resource [com/edgecross/haccp/config/MqttConfig.class]'; from source: 'com.edgecross.haccp.config.MqttConfig.inboundChannel()'
+2023-02-15 16:19:21.726  INFO 15486 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-02-15 16:19:21.726  INFO 15486 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2023-02-15 16:19:21.726  INFO 15486 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-02-15 16:19:21.726  INFO 15486 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Removing {message-handler:mqttConfig.inboundMessageHandler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-02-15 16:19:21.726  INFO 15486 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application.mqttInputChannel' has 0 subscriber(s).
+2023-02-15 16:19:21.726  INFO 15486 --- [main] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'mqttConfig.inboundMessageHandler.serviceActivator'
